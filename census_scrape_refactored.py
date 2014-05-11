@@ -17,10 +17,12 @@ def main():
         for counter,row in enumerate(reader):
             print counter
             results = c.acs5.zipcode(','.join(fields), row['zip'])
+            # For successful api call, set results to content of returned list.
+            # Write the ombined results of the api call and the reference csv.
             if results != []:
                 results = results[0]
-            if isinstance(results, dict):
                 writer.writerow(dict(row.items() + results.items()))
+            # Else, just rewrite the row from reference csv.
             else:
                 writer.writerow(row)
 
