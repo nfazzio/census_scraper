@@ -9,11 +9,11 @@ Before running:
 
 3) Obtain a csv of US zipcodes. The script is tailored to interpret the list provided here http://www.unitedstateszipcodes.org/zip-code-database/. The script defaults to read from zip_code_database.csv, but you can specify a different file with the -i option.
 
-4) ```python census_scrape_refactored.py```
+4) ```python census_scraper.py```
 
 ```
-python census_scrape_refactored.py -h
-usage: census_scrape_refactored.py [-h] [-i INFILE] [-o OUTFILE] [-f FIELDS]
+python census_scraper.py -h
+usage: census_scraper.py [-h] [-i INFILE] [-o OUTFILE] [-f FIELDS]
                                    [-k KEY]
 
 optional arguments:
