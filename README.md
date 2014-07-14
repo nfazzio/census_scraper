@@ -1,4 +1,4 @@
-A tool for collecting census fields for the US on a zipcode bases.
+A tool for collecting census fields for the US on a zipcode basis.
 
 Before running:
 
